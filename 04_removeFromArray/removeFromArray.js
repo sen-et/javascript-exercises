@@ -1,11 +1,11 @@
 const removeFromArray = function(arr, ...valRemove) {
-    let newArray = [];
-    arr.forEach((i) => {
-        if (!valRemove.includes(i)) {
-            newArray.push(i);
+    const newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!valRemove.includes(arr[i])) {
+            newArr.push(arr[i]);
         }
-    });
-    return newArray;
+    }
+    return newArr;
 };
 
 // Do not edit below this line
